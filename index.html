@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom treino 2</title>
+</head>
+<style>
+    body{
+        background-color: gray;
+    }
+
+    section>h1{
+        background-color: black;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        text-shadow: 2px 2px 5px red;
+        width: 600px;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+
+    section{
+        background-color: darkblue;
+        width: 630px;
+        height: 800px;
+        margin: auto;
+
+    }
+
+    div#principal{
+        background-color: darkcyan;
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        border: 5px solid gray;
+    }
+
+    #semaforo1{
+        
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        margin-top: 15px;
+        border: 3px solid black;
+        border-radius: 50%;
+        text-align: center ;
+        color: white;
+        font-size: 18pt;
+        text-shadow: 3px 3px 7px black;
+        
+    }
+
+    #semaforo2{
+        
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        margin-top: 15px;
+        border: 3px solid black;
+        border-radius: 50%;
+        text-align: center ;
+        color: white;
+        font-size: 18pt;
+        text-shadow: 3px 3px 7px black;
+        
+    }
+
+    #semaforo3{
+        
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        margin-top: 15px;
+        border: 3px solid black;
+        border-radius: 50%;
+        text-align: center ;
+        color: white;
+        font-size: 18pt;
+        text-shadow: 3px 3px 7px black;
+        
+    }
+
+    .luz1{
+        background-color: red;
+
+    }
+
+    .luz2{
+        background-color: orange;
+
+    }
+
+    .luz3{
+        background-color: green;
+
+    }
+</style>
+<body>
+<section>
+
+    <h1>Semaforo</h1>
+
+    <div id="principal"><div id="semaforo1"  class="luz1" onclick="sinalVl()">Vermelho</div></div>
+
+
+    <div id="principal"><div id="semaforo2" class="luz2" onclick="sinalLj()">Laranja</div></div>
+
+    
+    <div id="principal"><div id="semaforo2" class="luz3" onclick="sinalVd()">Verde</div></div>
+
+</section>
+
+<script>
+    var sinalvermelho= window.document.getElementById('semaforo1')
+    var sinallaranja= window.document.getElementById('semaforo2')
+    var sinalverde= window.document.getElementById('semaforo3')
+
+    function sinalVl(){
+        sinalvermelho.innerText='PARE!'
+    }
+
+    function sinalLj(){
+        sinalvermelho.innerText='REDUZA!'
+    }
+
+
+
+    function sinalVd(){
+        sinalvermelho.innerText='Siga!'
+    }
+
+
+
+
+
+
+</script>
+
+    
+</body>
+</html>
